@@ -42,10 +42,10 @@ $(function() {
 
 
 
-  $('#deposit_text').text(min1 + ' £');
+  $('#deposit_text').text(min1 + ' $');
   $('#percent_text').text(percentage1 + '%');
   $('#day_text').text(30);
-  $('#profit_text').text(100 + ' £');
+  $('#profit_text').text(100 + ' $');
 
   $('#day-calc').val(1);
   $("#deposit-calc").val(min1);
@@ -54,7 +54,7 @@ $(function() {
   $("#deposit-calc").on('click keyup', function() {
 
       var summ = parseFloat($(this).val()); //сумма вложения
-      $('#deposit_text').text(summ + ' £');
+      $('#deposit_text').text(summ + ' $');
 
       if (min1 <= summ && summ <= max1) {
       	$('#percent_text').text(percentage1 + '%');
@@ -78,8 +78,8 @@ $(function() {
       	percent = percentage4;
       } else{
       	percent = 0;
-      	$('#profit_text').text(0 + ' £');
-      	$('#deposit_text').text(0 + ' £');
+      	$('#profit_text').text(0 + ' $');
+      	$('#deposit_text').text(0 + ' $');
       	$('.plans-item').removeClass('active');
       	$('#plan1').addClass('active');
       }
@@ -88,14 +88,14 @@ $(function() {
       var days = parseInt($("#day-calc").val());
 
       if(!$('#deposit-calc').val() || !$('#day-calc').val()){
-  		$('#profit_text').text(0 + ' £');
+  		$('#profit_text').text(0 + ' $');
   		$('#day_text').text(0);
   	} else{
   		var percent_sum = summ / 100;
   		var daily = percent * percent_sum;
   		var profitTotal = (daily * days).toFixed(2);
 
-  		$('#profit_text').text(profitTotal + " " + " £");
+  		$('#profit_text').text(profitTotal + " " + " $");
   	}
     });
 
@@ -107,14 +107,14 @@ $(function() {
   	var summ = parseFloat($('#deposit-calc').val());
 
   	if(!$('#deposit-calc').val() || !$('#day-calc').val()){
-  		$('#profit_text').text(0 + ' £');
+  		$('#profit_text').text(0 + ' $');
   		$('#day_text').text(0);
   	} else{
   		var percent_sum = summ / 100;
   		var daily = percent * percent_sum;
   		var profitTotal = (daily * days).toFixed(2);
 
-  		$('#profit_text').text(profitTotal + " " + " £");
+  		$('#profit_text').text(profitTotal + " " + " $");
   	}
   });
 
@@ -147,14 +147,14 @@ $(function() {
   	var days = parseInt($("#day-calc").val());
 
   	if(!$('#deposit-calc').val() || !$('#day-calc').val()){
-  		$('#profit_text').text(0 + ' £');
+  		$('#profit_text').text(0 + ' $');
   		$('#day_text').text(0);
   	} else{
   		var percent_sum = summ / 100;
   		var daily = percent * percent_sum;
   		var profitTotal = (daily * days).toFixed(2);
 
-  		$('#profit_text').text(profitTotal + " " + " £");
+  		$('#profit_text').text(profitTotal + " " + " $");
   	}
 
   });
