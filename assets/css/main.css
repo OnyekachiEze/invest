@@ -767,11 +767,11 @@ body a:hover, body a:focus, body button:hover, body button:focus {
 .logo-img {
   position: absolute;
   top: 50%;
-  left: -10rem;
+  left: -20rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  max-width: 200px;
+  max-width: 400px;
 }
 
 .logo-title {
@@ -4576,11 +4576,16 @@ body a:hover, body a:focus, body button:hover, body button:focus {
     line-height: 40px;
   }
   .logo-img {
-    max-width: 200px;
+    /* max-width: 100rem; */
   }
   .logo {
     padding-left: 55px;
   }
+
+  .logo img {
+    width: 500rem;
+  }
+
   .graph-white {
     top: 23%;
   }
