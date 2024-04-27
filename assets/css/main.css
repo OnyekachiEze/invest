@@ -767,11 +767,11 @@ body a:hover, body a:focus, body button:hover, body button:focus {
 .logo-img {
   position: absolute;
   top: 50%;
-  left: -3rem;
+  left: -10rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  max-width: 100px;
+  max-width: 200px;
 }
 
 .logo-title {
