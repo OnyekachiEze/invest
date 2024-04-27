@@ -766,12 +766,12 @@ body a:hover, body a:focus, body button:hover, body button:focus {
 
 .logo-img {
   position: absolute;
-  top: 50%;
-  left: -20rem;
+  bottom: 6587%;
+  left: 0rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .logo-title {
